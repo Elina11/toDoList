@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC7FD8122070BE3F003C044E /* displayToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7FD8112070BE3F003C044E /* displayToDoListViewController.swift */; };
 		EC86941C204A87D1000DFA53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC86941B204A87D1000DFA53 /* AppDelegate.swift */; };
 		EC869421204A87D1000DFA53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC86941F204A87D1000DFA53 /* Main.storyboard */; };
 		EC869423204A87D1000DFA53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC869422204A87D1000DFA53 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC7FD8112070BE3F003C044E /* displayToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = displayToDoListViewController.swift; sourceTree = "<group>"; };
 		EC869418204A87D1000DFA53 /* toDoListHomework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = toDoListHomework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC86941B204A87D1000DFA53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC869420204A87D1000DFA53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			children = (
 				EC86941B204A87D1000DFA53 /* AppDelegate.swift */,
 				EC86941F204A87D1000DFA53 /* Main.storyboard */,
+				EC7FD8112070BE3F003C044E /* displayToDoListViewController.swift */,
 				ECEB1F33204D2E4C00E2414C /* ItemCell.swift */,
 				ECEB1F31204D243200E2414C /* ToDoListViewController.swift */,
 				EC869422204A87D1000DFA53 /* Assets.xcassets */,
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECEB1F32204D243200E2414C /* ToDoListViewController.swift in Sources */,
+				EC7FD8122070BE3F003C044E /* displayToDoListViewController.swift in Sources */,
 				EC86941C204A87D1000DFA53 /* AppDelegate.swift in Sources */,
 				ECEB1F34204D2E4C00E2414C /* ItemCell.swift in Sources */,
 			);

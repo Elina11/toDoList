@@ -15,6 +15,10 @@ class ToDoListViewController: UITableViewController {
         return items.count
     }
     
+    @IBAction func addItem(_ sender: Any) {
+        items.append("New Task")
+        tableView.reloadData()    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = items[indexPath.row]
         
@@ -24,6 +28,9 @@ class ToDoListViewController: UITableViewController {
         
         return cell
     }
-    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selected = items[indexPath.row]
+        //performSegue(withIdentifier: "fruitTransition", sender: self)
+    }
 
 }
