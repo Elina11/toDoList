@@ -41,13 +41,17 @@ override func tableView(_ tableView: UITableView, numberOfRowsInSection section:
 */
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = items[indexPath.row]
+       
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemsCell") as! ItemCell
         cell.textLabel?.text = item
         cell.item = item
-        
+       
         return cell
     }
+
+
+    
     @IBAction func addItem(_ sender: UIBarButtonItem) {
         let alert = UIAlertController(title: "New Task",
                                       message: "Add a new task",
@@ -76,7 +80,20 @@ override func tableView(_ tableView: UITableView, numberOfRowsInSection section:
         present(alert, animated: true)
         
     }
-   /* func save(taskName: String) {
+    @IBAction func completedTask(_ sender: Any) {
+        completed  = true
+    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selected = items[indexPath.row]
+        performSegue(withIdentifier: "taskDisplay", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? DisplayItemViewController {
+            destination.item = selected
+        }
+    
+        
+        /* func save(taskName: String) {
         
         guard let appDelegate =
             UIApplication.shared.delegate as? AppDelegate else {
@@ -117,5 +134,8 @@ override func tableView(_ tableView: UITableView, numberOfRowsInSection section:
         //performSegue(withIdentifier: "fruitTransition", sender: self)
     }
 */
+    
+
+}
 }
 
